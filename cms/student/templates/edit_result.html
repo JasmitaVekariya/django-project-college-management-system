@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+  <h2>Edit Result for {{ result.student.name }}</h2>
+  <form method="POST">
+    {% csrf_token %}
+    <div>
+      <label for="subject">Subject</label>
+      <input type="text" name="subject" value="{{ result.subject }}" required>
+    </div>
+    <div>
+      <label for="marks_obtained">Marks Obtained</label>
+      <input type="number" name="marks_obtained" value="{{ result.marks_obtained }}" required>
+    </div>
+    <div>
+      <label for="total_marks">Total Marks</label>
+      <input type="number" name="total_marks" value="{{ result.total_marks }}" required>
+    </div>
+    <button type="submit">Update Result</button>
+  </form>
+{% endblock %}

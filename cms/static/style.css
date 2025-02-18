@@ -1,0 +1,282 @@
+/* General Styles */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1a1a2e !important;
+}
+
+.navbar-brand,
+.nav-link {
+    color: #00aaff !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00ff88 !important;
+}
+
+.dropdown-menu {
+    background-color: #1a1a2e;
+}
+
+.dropdown-item {
+    color: #00aaff;
+}
+
+.dropdown-item:hover {
+    background-color: #00aaff;
+    color: #121212;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #00aaff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0088cc;
+}
+
+.btn-outline-success {
+    color: #00ff88;
+    border-color: #00ff88;
+}
+
+.btn-outline-success:hover {
+    background-color: #00ff88;
+    color: #121212;
+}
+
+/* Form Inputs */
+.form-control {
+    background-color: #1a1a2e;
+    color: #ffffff;
+    border: 1px solid #00aaff;
+}
+
+.form-control::placeholder {
+    color: #00aaff;
+}
+
+/* Container */
+.container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #1a1a2e;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 170, 255, 0.5);
+}
+
+/* Form Styling */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-box {
+    background-color: #1a1a2e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 170, 255, 0.5);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.form-box h2 {
+    color: #00aaff;
+    margin-bottom: 20px;
+}
+
+.form-box .form-control {
+    margin-bottom: 15px;
+}
+
+.form-box .btn {
+    width: 100%;
+}
+
+/* Center Links */
+.center-links {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.center-links a {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+.center-links a:hover {
+    text-decoration: underline;
+}
+
+/* Student Form Styling */
+.student-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1a1a2e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 187, 0, 0.5);
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.student-form h1 {
+    color: #ffbb00;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.student-form .form-control {
+    border: 1px solid #ffbb00;
+    background-color: #222;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.student-form .btn-warning {
+    width: 100%;
+    background-color: #ffbb00;
+    border: none;
+    color: #121212;
+}
+
+.student-form .btn-warning:hover {
+    background-color: #ffaa00;
+}
+
+.student-form a {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #ffbb00;
+    text-decoration: none;
+}
+
+.student-form a:hover {
+    text-decoration: underline;
+}
+
+/* General Styles */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1a1a2e !important;
+}
+
+.navbar-brand,
+.nav-link {
+    color: #00aaff !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00ff88 !important;
+}
+
+.dropdown-menu {
+    background-color: #1a1a2e;
+}
+
+.dropdown-item {
+    color: #00aaff;
+}
+
+.dropdown-item:hover {
+    background-color: #00aaff;
+    color: #121212;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #00aaff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0088cc;
+}
+
+.btn-outline-success {
+    color: #00ff88;
+    border-color: #00ff88;
+}
+
+.btn-outline-success:hover {
+    background-color: #00ff88;
+    color: #121212;
+}
+
+/* Form Inputs */
+.form-control {
+    background-color: #1a1a2e;
+    color: #ffffff;
+    border: 1px solid #00aaff;
+}
+
+.form-control::placeholder {
+    color: #00aaff;
+}
+
+.custom-table {
+    border-radius: 15px;
+    border: 2px solid #00aaff;
+    box-shadow: 0 0 15px rgba(0, 170, 255, 0.5);
+    overflow: hidden;
+}
+
+.table th, .table td {
+    text-align: center;
+    padding: 12px;
+    font-size: 16px;
+}
+
+.table th {
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+}
+
+/* Day Name Styling */
+.day-name {
+    font-size: 22px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Recess styling */
+.recess {
+    background-color: #1a1a2e;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Container Styling */
+.container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #1a1a2e;
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 10px rgba(0, 170, 255, 0.5); */
+}

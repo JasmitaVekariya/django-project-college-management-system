@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Student Profile
+{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1 class="text-center">{{ student.name }}'s Profile</h1>
+    <div class="card shadow-lg">
+        <div class="card-body">
+            <h5 class="card-title text-primary">{{ student.user.username }}</h5>
+            <p class="card-text">
+                <strong>Department:</strong> {{ student.department }} <br>
+                <strong>Year:</strong> {{ student.year }} <br>
+                <strong>Semester:</strong> {{ student.semester }}
+            </p>
+            <p class="card-text">
+                {{ student.about }}
+            </p>
+            <div class="card-footer text-center">
+                {% if request.user.is_superuser or student.user == request.user %}
+                    <a href="{% url 'student_edit' student.id %}" class="btn btn-warning btn-sm">Edit</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

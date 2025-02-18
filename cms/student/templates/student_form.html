@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}  <!-- Fix the typo in "titale" -->
+Student Form
+{% endblock %}
+
+{% block content %}
+<h1 class="text-center mt-4">Student Form</h1>
+
+<form method="post" enctype="multipart/form-data" class="form container box">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button class="btn btn-warning" type="submit">Submit</button>
+</form>
+
+<!-- Conditionally show different back links -->
+{% if request.user.is_superuser %}
+    <a href="{% url 'student_list' %}" class="btn btn-secondary mt-3">Back to Student List</a>
+{% else %}
+    <a href="{% url 'index' %}" class="btn btn-secondary mt-3">Back</a>
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block title %} Home {% endblock  %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<header class="bg-primary text-white text-center">
+    <div class="container">
+        <h1>Welcome to DDU</h1>
+    </div>
+</header>
+
+<!-- Features Section -->
+<section class="container text-center my-5">
+    <h2 class="mb-4">Key Features</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="card p-3">
+                <h4>🎓 Student Portal</h4>
+                <p>View timetable, results, and notices.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Announcements Section -->
+<section class="bg-light">
+    <div class="container">
+        <h2 class="text-center">Latest Announcements</h2>
+        <ul class="list-group mt-3">
+            <li class="list-group-item">📢 Semester Exams start from March 15.</li>
+            <li class="list-group-item">📢 New books added to the library collection.</li>
+            <li class="list-group-item">📢 College Fest registrations open now!</li>
+        </ul>
+    </div>
+</section>
+
+<br>
+<br>
+
+<div class="text-center mb-4">
+    {% if request.user.is_superuser %}
+        <a class="btn btn-success" href="{% url 'student_create' %}">Add Student</a>
+        <a class="btn btn-primary" href="{% url 'add_result' %}">Add Result</a>
+    {% endif %}
+</div>
+
+{% endblock  %}
